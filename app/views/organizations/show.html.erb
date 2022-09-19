@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Members:</strong>
+  <%= @organization.members_id %>
+</p>
+
+<p>
+  <strong>Event:</strong>
+  <%= @organization.event_id %>
+</p>
+
+<p>
+  <strong>Permission:</strong>
+  <%= @organization.permission_id %>
+</p>
+
+<%= link_to 'Edit', edit_organization_path(@organization) %> |
+<%= link_to 'Back', organizations_path %>
