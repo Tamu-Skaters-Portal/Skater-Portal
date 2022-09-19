@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  root 'books#index'
+  resources :members
+  root 'members#index'
 
-  resources :books do
+  resources :members do
     member do
       get :delete
     end
