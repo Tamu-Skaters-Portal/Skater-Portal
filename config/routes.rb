@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :permissions
+  resources :events
+  resources :organizations
   resources :members
   resources :members
   root 'members#index'

@@ -1,0 +1,27 @@
+<%= form_with(model: permission) do |form| %>
+  <% if permission.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(permission.errors.count, "error") %> prohibited this permission from being saved:</h2>
+
+      <ul>
+        <% permission.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :member_access %>
+    <%= form.check_box :member_access %>
+  </div>
+
+  <div class="field">
+    <%= form.label :officer_access %>
+    <%= form.check_box :officer_access %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
