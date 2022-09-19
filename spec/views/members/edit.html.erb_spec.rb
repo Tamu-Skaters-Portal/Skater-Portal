@@ -3,12 +3,11 @@ require 'rails_helper'
 RSpec.describe "members/edit", type: :view do
   before(:each) do
     @member = assign(:member, Member.create!(
-      member_id: "",
       name: "MyString",
       email: "MyString",
       points: 1.5,
       paid_status: false,
-      permission_id: ""
+      permission_id: 1
     ))
   end
 
@@ -16,8 +15,6 @@ RSpec.describe "members/edit", type: :view do
     render
 
     assert_select "form[action=?][method=?]", member_path(@member), "post" do
-
-      assert_select "input[name=?]", "member[member_id]"
 
       assert_select "input[name=?]", "member[name]"
 
