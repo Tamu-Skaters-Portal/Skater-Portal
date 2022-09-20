@@ -1,31 +1,37 @@
 require 'rails_helper'
 
-RSpec.describe Book, type: :model do
+RSpec.describe Member, type: :model do
   subject do
-    described_class.new(title: 'Harry Potter', author: 'JK Rowling', price: 19.99, published_date: '2020-09-28')
+    described_class.new(name: 'Nam Cao', email: 'email@email.com', points: 2, paid_status: true, permission_id: 1)
   end
+
 
   it 'is valid with all valid attributes' do
     expect(subject).to be_valid
   end
 
-  it 'is not valid without a title' do
-    subject.title = nil
+  it 'is not valid without a member' do
+    subject.name = nil
     expect(subject).not_to be_valid
   end
 
-  it 'is not valid without a author' do
-    subject.author = nil
+  it 'is not valid without an email' do
+    subject.email = nil
     expect(subject).not_to be_valid
   end
 
-  it 'is not valid without a price' do
-    subject.price = nil
+  it 'is not valid without points' do
+    subject.points = nil
     expect(subject).not_to be_valid
   end
 
-  it 'is not valid without a published_date' do
-    subject.published_date = nil
+  it 'is not valid without paid_status' do
+    subject.paid_status = nil
+    expect(subject).not_to eq(false)
+  end
+
+  it 'is not valid without a valid permission' do
+    subject.permission_id = nil
     expect(subject).not_to be_valid
   end
 end
