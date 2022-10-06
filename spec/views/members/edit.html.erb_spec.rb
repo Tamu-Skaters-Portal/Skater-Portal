@@ -5,9 +5,9 @@ RSpec.describe "members/edit", type: :view do
     @member = assign(:member, Member.create!(
       name: "MyString",
       email: "MyString",
-      points: 1.5,
-      paid_status: false,
-      permission_id: 1
+      points: 1,
+      paid_status: "MyString",
+      access_type: 1
     ))
   end
 
@@ -24,7 +24,7 @@ RSpec.describe "members/edit", type: :view do
 
       assert_select "input[name=?]", "member[paid_status]"
 
-      assert_select "input[name=?]", "member[permission_id]"
+      assert_select "input[name=?]", "member[access_type]"
     end
   end
 end
