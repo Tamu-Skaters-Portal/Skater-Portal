@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :attendances
+  resources :finances
+  resources :events
+  resources :members
   resources :permissions
   resources :events
   resources :organizations
