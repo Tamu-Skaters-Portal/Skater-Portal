@@ -1,3 +1,3 @@
 class Event < ApplicationRecord
-    belongs_to :attendance
+    has_one :attendance
 end

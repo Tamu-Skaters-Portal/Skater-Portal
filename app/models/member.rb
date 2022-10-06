@@ -1,4 +1,4 @@
 class Member < ApplicationRecord
-    belongs_to :finance
-    belongs_to :attendance
+    has_one :finance
+    has_many :attendances
 end

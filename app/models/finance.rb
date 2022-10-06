@@ -1,3 +1,3 @@
 class Finance < ApplicationRecord
-    has_one :member
+    belongs_to :member
 end
