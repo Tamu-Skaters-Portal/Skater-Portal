@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   resources :organizations
   resources :members
   resources :members
-  root 'members#index'
+  root 'pages#home'
 
   resources :members do
     member do
