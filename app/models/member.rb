@@ -10,16 +10,6 @@ class Member < ApplicationRecord
       self.token = SecureRandom.urlsafe_base64
     end
 
-    def self.get_access_type(token)
-      Rails.logger.debug("Member: #{self.find_by_token(token)}")
-      member = self.find_by_token(token)
-      if member
-        return member.access_type
-      else 
-        return 0
-      end
-    end
-
     #https://medium.com/@amoschoo/google-oauth-for-ruby-on-rails-129ce7196f35
     def self.from_omniauth(auth)
       member = Member.find_by(email: auth.info.email)
