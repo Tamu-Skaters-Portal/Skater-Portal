@@ -15,6 +15,7 @@
   </thead>
 
   <tbody>
+  <%= link_to "Sign in with Google", member_github_omniauth_authorize_path(:google_oauth2) %>
     <% @members.each do |member| %>
       <tr>
         <td><%= member.name %></td>

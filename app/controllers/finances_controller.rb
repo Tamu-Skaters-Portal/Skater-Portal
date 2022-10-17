@@ -3,7 +3,11 @@ class FinancesController < ApplicationController
 
   # GET /finances or /finances.json
   def index
-    @finances = Finance.all
+    if 0 == 1 
+      @finances = Finance.all
+    else
+      redirect_to root_path
+    end
   end
 
   # GET /finances/1 or /finances/1.json
