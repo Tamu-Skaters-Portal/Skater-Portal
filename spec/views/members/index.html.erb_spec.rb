@@ -6,16 +6,18 @@ RSpec.describe "members/index", type: :view do
       Member.create!(
         name: "Name",
         email: "Email",
-        points: 2,
-        paid_status: "Paid Status",
-        access_type: 3
+        token: "Token",
+        access_type: 2,
+        paid_status: 3,
+        points: 4
       ),
       Member.create!(
         name: "Name",
         email: "Email",
-        points: 2,
-        paid_status: "Paid Status",
-        access_type: 3
+        token: "Token",
+        access_type: 2,
+        paid_status: 3,
+        points: 4
       )
     ])
   end
@@ -24,8 +26,9 @@ RSpec.describe "members/index", type: :view do
     render
     assert_select "tr>td", text: "Name".to_s, count: 2
     assert_select "tr>td", text: "Email".to_s, count: 2
+    assert_select "tr>td", text: "Token".to_s, count: 2
     assert_select "tr>td", text: 2.to_s, count: 2
-    assert_select "tr>td", text: "Paid Status".to_s, count: 2
     assert_select "tr>td", text: 3.to_s, count: 2
+    assert_select "tr>td", text: 4.to_s, count: 2
   end
 end

@@ -3,9 +3,10 @@ class CreateMembers < ActiveRecord::Migration[6.1]
     create_table :members do |t|
       t.string :name
       t.string :email
-      t.integer :points
-      t.string :paid_status
+      t.string :token
       t.integer :access_type
+      t.integer :paid_status
+      t.integer :points
 
       t.timestamps
     end
