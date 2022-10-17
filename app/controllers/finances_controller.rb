@@ -3,9 +3,11 @@ class FinancesController < ApplicationController
 
   # GET /finances or /finances.json
   def index
-    @access_type ||= Member.find_by_token(cookies[:token]).access_type if cookies[:token]
-    #Rails.logger.debug("Current member: #{@current_member}")
-    if @current_member != nil && @current_member.access_type == 0 
+    Rails.logger.debug("Cookie: #{cookies[:token]}")
+    Rails.logger.debug("Cookie: #{cookies.permanent[:token]}")
+    @access_type ||= Member.get_access_type(cookies.permanent[:token]) if cookies[:token]
+    Rails.logger.debug("Current access: #{@current_access}")
+    if @access_type != nil && @access_type == 0 
       @finances = Finance.all
     else
       redirect_to root_path

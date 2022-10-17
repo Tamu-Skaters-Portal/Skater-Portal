@@ -10,8 +10,17 @@ class Member < ApplicationRecord
       self.token = SecureRandom.urlsafe_base64
     end
 
+    def self.get_access_type(token)
+      Rails.logger.debug("Member: #{self.find_by_token(token)}")
+      where(self.find_by_token(token)) do |member|
+        member.access_type
+      end
+    end
+
     #https://medium.com/@amoschoo/google-oauth-for-ruby-on-rails-129ce7196f35
     def self.from_omniauth(auth)
+      member = Member.find_by(email: auth.info.email)
+      if member != nil
         # Creates a new user only if it doesn't exist
         where(email: auth.info.email).first_or_initialize do |member|
           member.name = auth.info.name
@@ -21,4 +30,7 @@ class Member < ApplicationRecord
           member.access_type = 0
         end
       end
+      member.save
+      member
+    end
 end
