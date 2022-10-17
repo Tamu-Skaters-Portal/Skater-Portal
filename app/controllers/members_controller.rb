@@ -1,5 +1,4 @@
 class MembersController < ApplicationController
-
   before_action :set_member, only: %i[ show edit update destroy ]
 
   # GET /members or /members.json
@@ -65,6 +64,6 @@ class MembersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def member_params
-      params.require(:member).permit(:name, :email, :points, :paid_status, :access_type)
+      params.require(:member).permit(:name, :email, :token, :access_type, :paid_status, :points)
     end
 end
