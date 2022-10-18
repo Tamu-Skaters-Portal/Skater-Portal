@@ -10,10 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_09_19_025321) do
+ActiveRecord::Schema.define(version: 2022_10_17_061425) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "attendances", force: :cascade do |t|
+    t.integer "member_id"
+    t.integer "event_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "events", force: :cascade do |t|
     t.datetime "date"
@@ -22,27 +29,20 @@ ActiveRecord::Schema.define(version: 2022_09_19_025321) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "finances", force: :cascade do |t|
+    t.integer "member_id"
+    t.float "amount"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "members", force: :cascade do |t|
     t.string "name"
     t.string "email"
-    t.float "points"
-    t.boolean "paid_status"
-    t.integer "permission_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "organizations", force: :cascade do |t|
-    t.integer "members_id"
-    t.integer "event_id"
-    t.integer "permission_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "permissions", force: :cascade do |t|
-    t.boolean "member_access"
-    t.boolean "officer_access"
+    t.string "token"
+    t.integer "access_type"
+    t.integer "paid_status"
+    t.integer "points"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

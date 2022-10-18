@@ -5,9 +5,10 @@ RSpec.describe "members/show", type: :view do
     @member = assign(:member, Member.create!(
       name: "Name",
       email: "Email",
-      points: 2.5,
-      paid_status: false,
-      permission_id: 3
+      token: "Token",
+      access_type: 2,
+      paid_status: 3,
+      points: 4
     ))
   end
 
@@ -15,8 +16,9 @@ RSpec.describe "members/show", type: :view do
     render
     expect(rendered).to match(/Name/)
     expect(rendered).to match(/Email/)
-    expect(rendered).to match(/2.5/)
-    expect(rendered).to match(/false/)
+    expect(rendered).to match(/Token/)
+    expect(rendered).to match(/2/)
     expect(rendered).to match(/3/)
+    expect(rendered).to match(/4/)
   end
 end

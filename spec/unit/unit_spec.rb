@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Member, type: :model do
   subject do
-    described_class.new(name: 'Nam Cao', email: 'email@email.com', points: 2, paid_status: true, permission_id: 1)
+    described_class.new(name: 'Nam Cao', email: 'email@email.com', access_type: 1, paid_status: 25, points: 2)
   end
 
 
@@ -10,7 +10,7 @@ RSpec.describe Member, type: :model do
     expect(subject).to be_valid
   end
 
-  it 'is not valid without a member' do
+  it 'is not valid without a name' do
     subject.name = nil
     expect(subject).not_to be_valid
   end
@@ -20,18 +20,19 @@ RSpec.describe Member, type: :model do
     expect(subject).not_to be_valid
   end
 
-  it 'is not valid without points' do
-    subject.points = nil
+
+  it 'is not valid without access type' do
+    subject.access_type = nil
     expect(subject).not_to be_valid
   end
 
-  it 'is not valid without paid_status' do
+  it 'is not valid without paid status' do
     subject.paid_status = nil
-    expect(subject).not_to eq(false)
+    expect(subject).not_to be_valid
   end
 
-  it 'is not valid without a valid permission' do
-    subject.permission_id = nil
+  it 'is not valid without a valid points' do
+    subject.points = nil
     expect(subject).not_to be_valid
   end
 end

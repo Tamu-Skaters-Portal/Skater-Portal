@@ -1,20 +1,16 @@
 {
   "RSpec": {
     "coverage": {
-      "/csce431/spec/unit/unit_spec.rb": {
+      "/csce431/spec/feature/integration_spec.rb": {
         "lines": [
           1,
           null,
-          1,
-          1,
-          6,
-          null,
-          null,
           null,
           1,
           1,
-          null,
-          null,
+          1,
+          1,
+          1,
           1,
           1,
           1,
@@ -23,21 +19,12 @@
           1,
           1,
           1,
-          null,
-          null,
           1,
-          1,
-          1,
-          null,
-          null,
           1,
           1,
           1,
           null,
           null,
-          1,
-          1,
-          1,
           null,
           null
         ]
@@ -356,6 +343,16 @@
           null
         ]
       },
+      "/csce431/config/initializers/omniauth.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
       "/csce431/config/initializers/permissions_policy.rb": {
         "lines": [
           null,
@@ -398,6 +395,11 @@
           1,
           1,
           1,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
           1,
           1,
@@ -405,10 +407,19 @@
           null,
           null,
           null,
+          null,
+          1,
+          1,
           null
         ]
       },
       "/csce431/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/csce431/app/helpers/attendances_helper.rb": {
         "lines": [
           1,
           null
@@ -420,19 +431,92 @@
           null
         ]
       },
+      "/csce431/app/helpers/finances_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
       "/csce431/app/helpers/members_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/csce431/app/helpers/organizations_helper.rb": {
+      "/csce431/app/controllers/members_controller.rb": {
         "lines": [
           1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          2,
+          1,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
           null
         ]
       },
-      "/csce431/app/helpers/permissions_helper.rb": {
+      "/csce431/app/controllers/application_controller.rb": {
         "lines": [
           1,
           null
@@ -441,11 +525,43 @@
       "/csce431/app/models/member.rb": {
         "lines": [
           1,
+          null,
+          null,
           1,
           1,
           1,
           1,
           1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          null,
           null
         ]
       },
@@ -457,6 +573,6 @@
         ]
       }
     },
-    "timestamp": 1663642279
+    "timestamp": 1666060156
   }
 }
