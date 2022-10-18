@@ -1,4 +1,13 @@
 class Member < ApplicationRecord
+
+
+  validates :name, presence: true
+  validates :email, presence: true
+  validates :access_type, presence: true
+  validates :paid_status, presence: true
+  validates :points, presence: true
+
+
     has_one :finance
     has_many :attendances
 
