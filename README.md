@@ -3,6 +3,11 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
+Introduction:
+The Tamu Skater Portal web app was developed as a central page for all things TAMU Skaters. 
+On the web app you can find information on the org and find links to join it. 
+It is also used as a data tracker/organizer for all things the organization needs.
+
 Things you may want to cover:
 
 * System versions
@@ -16,7 +21,10 @@ Things you may want to cover:
   * Brakeman
   * Simplecov
 
-* test command
+* Installation
+  * Run: git clone https://github.com/your_github_here.git 
+
+* Test command
   * rspec spec/
 
 * Execute Code
@@ -32,3 +40,8 @@ Things you may want to cover:
   * rails server --binding=0.0.0.0
   * then go to your localhost
 
+* Deployment
+  * The repo is linked to the heroku pipeline, so merging to main will result in automatic deployment
+
+* Support
+  * Users seeking support can run the web app and join the organization discord. There you will find a channel for support from the developers    
