@@ -3,7 +3,8 @@ require 'rails_helper'
 RSpec.describe "events/edit", type: :view do
   before(:each) do
     @event = assign(:event, Event.create!(
-      location: "MyString"
+      location: "MyString",
+      date: "2022-10-18 03:00:00"
     ))
   end
 

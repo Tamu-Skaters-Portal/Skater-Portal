@@ -1,8 +1,15 @@
 require 'rails_helper'
 
 # Example
+# def mockoatuh
+#   OmniAuth.config.test_mode = true
+#   OmniAuth.config.mock_auth[:google] = OmniAuth::AuthHash.new({
+
+#   })
+# end
 RSpec.describe 'Creating a member', type: :feature do
   scenario 'valid inputs' do
+   # mockoatuh
     visit new_member_path
     fill_in 'Name', with: 'Nam Cao'
     fill_in 'Email', with: 'Email@email.com'
@@ -61,7 +68,6 @@ RSpec.describe 'Creating an Attendance', type: :feature do
     select 'Nam Cao', from: 'Member'
     select 'Nam house', from: 'Event'
     
-    
     click_on 'Create Attendance'
     visit attendances_path
     expect(page).to have_content('Nam Cao')
@@ -75,7 +81,7 @@ end
 #   scenario 'valid inputs' do
 #     visit new_member_path
 #     fill_in 'Name', with: 'Nam Cao'
-#     fill_in 'Email', with: 'Email@email.com'
+#     fill_in 'Email', with: 'Email@tamu.edu'
 #     fill_in 'Access type', with: 1
 #     fill_in 'Paid status', with: 25
 #     fill_in 'Points', with: 2
