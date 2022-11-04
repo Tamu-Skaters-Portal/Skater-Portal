@@ -18,7 +18,6 @@
 #       expect(get: "/attendances/1/edit").to route_to("attendances#edit", id: "1")
 #     end
 
-
 #     it "routes to #create" do
 #       expect(post: "/attendances").to route_to("attendances#create")
 #     end

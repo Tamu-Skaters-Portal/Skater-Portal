@@ -1,1 +1,1 @@
-json.array! @finances, partial: "finances/finance", as: :finance
+json.array!(@finances, partial: 'finances/finance', as: :finance)

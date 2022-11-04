@@ -13,7 +13,7 @@
 # # sticking to rails and rspec-rails APIs to keep things simple and stable.
 
 # RSpec.describe "/members", type: :request do
-  
+
 #   # Member. As you add validations to Member, be sure to
 #   # adjust the attributes here as well.
 #   let(:valid_attributes) {

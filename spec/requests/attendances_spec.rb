@@ -13,7 +13,7 @@
 # # sticking to rails and rspec-rails APIs to keep things simple and stable.
 
 # RSpec.describe "/attendances", type: :request do
-  
+
 #   # Attendance. As you add validations to Attendance, be sure to
 #   # adjust the attributes here as well.
 #   let(:valid_attributes) {

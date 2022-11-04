@@ -13,7 +13,7 @@
 # # sticking to rails and rspec-rails APIs to keep things simple and stable.
 
 # RSpec.describe "/finances", type: :request do
-  
+
 #   # Finance. As you add validations to Finance, be sure to
 #   # adjust the attributes here as well.
 #   let(:valid_attributes) {
