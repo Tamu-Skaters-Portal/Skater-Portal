@@ -19,7 +19,7 @@ class AttendancesController < ApplicationController
 
      # POST /attendances or /attendances.json
      def create
-          @attendance = Attendance.new(attendance_params)
+          @attendance = Attendance.new(attendanceParams)
 
           respond_to do |format|
                if @attendance.save
@@ -37,7 +37,7 @@ class AttendancesController < ApplicationController
      # PATCH/PUT /attendances/1 or /attendances/1.json
      def update
           respond_to do |format|
-               if @attendance.update(attendance_params)
+               if @attendance.update(attendanceParams)
                     format.html do
                          redirect_to(@attendance, notice: 'Attendance was successfully updated.')
                     end
