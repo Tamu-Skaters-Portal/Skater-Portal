@@ -10,15 +10,21 @@ require 'rails_helper'
 RSpec.describe('Creating a member', type: :feature) do
      it 'valid inputs' do
           # mockoatuh
-          visit new_member_path
+          visit new_member_path #going to /members page
+
+          # filling out the new member details
           fill_in 'Name', with: 'Nam Cao'
           fill_in 'Email', with: 'Email@email.com'
           fill_in 'Access type', with: 1
           fill_in 'Paid status', with: 25
           fill_in 'Points', with: 2
 
+          # clicking on the create member button
           click_on 'Create Member'
-          visit members_path
+          
+          visit members_path # visiting the member table page
+
+          # checking to see if the page has expected content
           expect(page).to(have_content('Nam Cao'))
           expect(page).to(have_content('Email@email.com'))
           expect(page).to(have_content('1'))
@@ -67,26 +73,57 @@ RSpec.describe('Creating an Attendance', type: :feature) do
           expect(page).to(have_content('Nam house'))
      end
 end
-# RSpec.describe 'Creating a Finance', type: :feature do
-#   scenario 'valid inputs' do
-#     visit new_member_path
-#     fill_in 'Name', with: 'Nam Cao'
-#     fill_in 'Email', with: 'Email@tamu.edu'
-#     fill_in 'Access type', with: 1
-#     fill_in 'Paid status', with: 25
-#     fill_in 'Points', with: 2
 
-#     click_on 'Create Member'
-#     visit
-#     visit '/auth/google_oauth2'
-#     visit new_finance_path
-#     select 'Nam Cao', from: 'Member'
-#     fill_in 'Amount', with: 25
+# most updated finance table integration test check
+# RSpec.describe('Creating a Finance', type: :feature) do
+#      it 'valid inputs' do
+#           visit new_member_path
+#           fill_in 'Name', with: 'Nam Cao'
+#           fill_in 'Email', with: 'Email@tamu.edu'
+#           fill_in 'Access type', with: 1
+#           fill_in 'Paid status', with: 25
+#           fill_in 'Points', with: 2
 
-#     click_on 'Create Finance'
-#     visit finances_path
-#     expect(page).to have_content('Nam Cao')
-#     expect(page).to have_content('25')
+#           click_on 'Create Member'
 
-#   end
+#           # visit
+
+#           # visit '/auth/google_oauth2'
+
+#           visit new_finance_path
+#           select 'Nam Cao', from: 'Member'
+#           fill_in 'Amount', with: 25
+
+#           click_on 'Create Finance'
+
+#           visit finances_path
+#           expect(page).to have_content('Nam Cao')
+#           expect(page).to have_content('25')
+#      end
 # end
+
+#older version of finances table test
+# RSpec.describe 'Creating a Finance', type: :feature do
+#      scenario 'valid inputs' do
+#      visit new_member_path
+#      fill_in 'Name', with: 'Nam Cao'
+#      fill_in 'Email', with: 'Email@tamu.edu'
+#      fill_in 'Access type', with: 1
+#      fill_in 'Paid status', with: 25
+#      fill_in 'Points', with: 2
+
+#      click_on 'Create Member'
+#      visit
+#      visit '/auth/google_oauth2'
+#      visit new_finance_path
+#      select 'Nam Cao', from: 'Member'
+#      fill_in 'Amount', with: 25
+
+#      click_on 'Create Finance'
+#      visit finances_path
+#      expect(page).to have_content('Nam Cao')
+#      expect(page).to have_content('25')
+
+#      end
+# end
+

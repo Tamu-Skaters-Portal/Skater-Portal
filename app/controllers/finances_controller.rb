@@ -4,10 +4,10 @@ class FinancesController < ApplicationController
      # GET /finances or /finances.json
      def index
           @current_member ||= Member.find_by_token(cookies[:token]) if cookies[:token]
-          if @current_member && @current_member.access_type == 1
+          if @current_member && @current_member.access_type == 1 # checking the access type of the current member. If it is 1 and not 0 then show finances page
                @finances = Finance.all
           else
-               redirect_to(root_path)
+               redirect_to(root_path) #akes us back the the landing page
           end
      end
 
