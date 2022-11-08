@@ -7,7 +7,7 @@ class FinancesController < ApplicationController
           if @current_member && @current_member.access_type == 1 # checking the access type of the current member. If it is 1 and not 0 then show finances page
                @finances = Finance.all
           else
-               redirect_to(root_path) #akes us back the the landing page
+               redirect_to(root_path) #takes us back the the landing page
           end
      end
 
