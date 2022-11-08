@@ -30,5 +30,10 @@
   <%= @member.points %>
 </p>
 
-<%= link_to 'Edit', edit_member_path(@member) %> |
+<%@current_member ||= Member.find_by_token(cookies[:token]) if cookies[:token]%>
+  <% if @current_member && @current_member.access_type == 1 %> 
+    <%= link_to 'Edit', edit_member_path(@member) %> |
+  <%else%>
+  <%#! Else should be empty be default %>
+  <%end%>
 <%= link_to 'Back', members_path %>
