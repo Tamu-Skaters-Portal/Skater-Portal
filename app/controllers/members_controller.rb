@@ -7,7 +7,25 @@ class MembersController < ApplicationController
     if @current_member && @current_member.access_type == 1
       @members = Member.all
     else
-      redirect_to(member_url(Member.first))
+      # redirect_to member_url(Member.find_one(@current_member.id))
+
+      # TODO: iterate through memmbers until we find a matching token
+      # TODO: if match then redirect to that member
+
+      # redirect_to Member.find(@current_member.id)
+      # redirect_to member_url(Member.find_by_token(@current_member.token))
+
+
+      for i in 1..Member.count do
+      puts "--------Member Token from array: " + Member.find(i).token
+      puts "--------Member Token from current member: " + cookies[:token]
+
+        if Member.find(i).token == cookies[:token]
+          indexOfTokenMatch = i
+        end
+      end
+
+      redirect_to action: "show", id: indexOfTokenMatch
     end
   end
 
