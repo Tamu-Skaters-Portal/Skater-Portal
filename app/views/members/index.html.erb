@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr>
+      <%# Table column titles %>
       <th>Name</th>
       <th>Email</th>
       <th>Token</th>
@@ -16,6 +17,7 @@
   </thead>
 
   <tbody>
+    <%# for each of the members how their name, email, token, access type, paid status, and points and give the option to show edit or destroy %>
     <% @members.each do |member| %>
       <tr>
         <td><%= member.name %></td>
@@ -24,6 +26,7 @@
         <td><%= member.access_type %></td>
         <td><%= member.paid_status %></td>
         <td><%= member.points %></td>
+        
         <td><%= link_to 'Show', member %></td>
         <td><%= link_to 'Edit', edit_member_path(member) %></td>
         <td><%= link_to 'Destroy', member, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -34,4 +37,9 @@
 
 <br>
 
-<%= link_to 'New Member', new_member_path %>
+<button> <%# Creates a button%>
+<b>
+<%= link_to 'Create a New Member', new_member_path %> <%# Create a new member button %>
+</b>
+</button>
+

@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr>
+      <%# table column titles %>
       <th>Date</th>
       <th>Location</th>
       <th colspan="3"></th>
@@ -14,6 +15,7 @@
   <tbody>
     <% @events.each do |event| %>
       <tr>
+        <%# For each of the members show their date and location and give the option to show edit or destroy %>
         <td><%= event.date %></td>
         <td><%= event.location %></td>
         <td><%= link_to 'Show', event %></td>
@@ -26,4 +28,8 @@
 
 <br>
 
+<button> <%# Creates a button%>
+<b>
 <%= link_to 'New Event', new_event_path %>
+</b>
+</button>

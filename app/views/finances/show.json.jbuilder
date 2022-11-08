@@ -1,1 +1,1 @@
-json.partial! "finances/finance", finance: @finance
+json.partial!('finances/finance', finance: @finance)

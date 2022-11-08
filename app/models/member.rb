@@ -1,4 +1,9 @@
 class Member < ApplicationRecord
+     validates :name, presence: true
+     validates :email, presence: true
+     validates :access_type, presence: true
+     validates :paid_status, presence: true
+     validates :points, presence: true
 
   validates :name, presence: true
   validates :email, presence: true
@@ -34,4 +39,5 @@ class Member < ApplicationRecord
       end
       member
     end
+
 end
