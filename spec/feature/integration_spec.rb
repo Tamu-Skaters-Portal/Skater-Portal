@@ -7,6 +7,7 @@ require 'rails_helper'
 #   })
 # end
 
+
 #TODO: Fix this test to mock google oauth in order to go to /members page
 
 # RSpec.describe('Creating a member', type: :feature) do
