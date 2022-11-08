@@ -16,8 +16,8 @@ class MembersController < ApplicationController
       # redirect_to member_url(Member.find_by_token(@current_member.token))
 
       for i in 1..Member.count do
-      puts "--------Member Token from array: " + Member.find(i).token
-      puts "--------Member Token from current member: " + cookies[:token]
+      # puts "--------Member Token from array: " + Member.find(i).token
+      # puts "--------Member Token from current member: " + cookies[:token]
 
         if Member.find(i).token == cookies[:token]
           indexOfTokenMatch = i
