@@ -11,27 +11,25 @@
     </div>
   <% end %>
 
-  <%# Member and Officers can change %>
+  <%# Only Officers can change %>
   <div class="field">
     <%= form.label :name %>
     <%= form.text_field :name %>
   </div>
 
-  <%# Members and Officers can change %>
+  <%# Only Officers can change %>
   <div class="field">
     <%= form.label :email %>
     <%= form.text_field :email %>
   </div>
 
-  <%# Will be deleted eventually%>
+  <%# Only Officers can change %>
   <div class="field">
     <%= form.label :token %>
     <%= form.text_field :token %>
   </div>
 
   <%# Only Officers can change %>
-  <%@current_member ||= Member.find_by_token(cookies[:token]) if cookies[:token]%>
-  <% if @current_member && @current_member.access_type == 1 %> 
     <div class="field">
       <%= form.label :access_type %>
       <%= form.number_field :access_type %>
@@ -48,13 +46,6 @@
       <%= form.label :points %>
       <%= form.number_field :points %>
     </div>
-
-  <%else%>
-  <%#! Else should be empty be default %>
-
-
-
-  <%end%>
 
   <div class="actions">
     <%= form.submit %>
