@@ -24,7 +24,9 @@ class MembersController < ApplicationController
         end
       end
 
-      redirect_to action: "show", id: indexOfTokenMatch
+      if indexOfTokenMatch != nil
+        redirect_to action: "show", id: indexOfTokenMatch
+      end
     end
   end
 
