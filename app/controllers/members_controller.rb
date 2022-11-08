@@ -25,7 +25,9 @@ class MembersController < ApplicationController
         end
       end
 
-      if indexOfTokenMatch != nil
+      if indexOfTokenMatch == 0
+        redirect_to(root_path) # consider changing this to log in oauth page
+      elsif indexOfTokenMatch != nil
         redirect_to action: "show", id: indexOfTokenMatch
       end
     end
