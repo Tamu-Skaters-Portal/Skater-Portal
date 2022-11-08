@@ -1,9 +1,14 @@
 class MembersController < ApplicationController 
   before_action :set_member, only: %i[ show edit update destroy ]
 
-  # GET /members or /members.json
+  # GET /members or /members.json (going to to members table)
   def index
-    @members = Member.all
+    @current_member ||= Member.find_by_token(cookies[:token]) if cookies[:token]
+    if @current_member && @current_member.access_type == 1
+      @members = Member.all
+    else
+      redirect_to(member_url(Member.first))
+    end
   end
 
   # GET /members/1 or /members/1.json

@@ -5,7 +5,6 @@ RSpec.describe Member, type: :model do
     described_class.new(name: 'Nam Cao', email: 'email@email.com', access_type: 1, paid_status: 25, points: 2)
   end
 
-
   it 'is valid with all valid attributes' do
     expect(subject).to be_valid
   end

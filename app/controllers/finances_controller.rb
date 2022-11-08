@@ -1,7 +1,7 @@
 class FinancesController < ApplicationController
   before_action :set_finance, only: %i[ show edit update destroy ]
 
-  # GET /finances or /finances.json
+  # GET /finances or /finances.json (going to the finances table)
   def index
     @current_member ||= Member.find_by_token(cookies[:token]) if cookies[:token]
     if @current_member && @current_member.access_type == 1
