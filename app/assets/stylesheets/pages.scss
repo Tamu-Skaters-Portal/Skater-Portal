@@ -3018,7 +3018,7 @@ textarea.form-control-lg {
   }
 }
 .btn:hover {
-  color: #212529;
+  color: #fff;
 }
 .btn-check:focus + .btn, .btn:focus {
   outline: 0;
@@ -3031,13 +3031,13 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #fff;
-  border-color: #dc354695;
+  background-color: #dc354695;
+  border-color: #fff;
 }
 .btn-primary:hover {
   color: #fff;
   background-color: #dc354695;
-  border-color: #fff;
+  border-color: #dc354695;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
@@ -3167,7 +3167,7 @@ textarea.form-control-lg {
 }
 .btn-check:checked + .btn-warning, .btn-check:active + .btn-warning, .btn-warning:active, .btn-warning.active, .show > .btn-warning.dropdown-toggle {
   color: #fff;
-  background-color: #cca000;
+  background-color: #dc354695;
   border-color: #bf9600;
 }
 .btn-check:checked + .btn-warning:focus, .btn-check:active + .btn-warning:focus, .btn-warning:active:focus, .btn-warning.active:focus, .show > .btn-warning.dropdown-toggle:focus {
@@ -3475,7 +3475,7 @@ textarea.form-control-lg {
   text-decoration: underline;
 }
 .btn-link:hover {
-  color: #cca000;
+  color: #dc354695;
 }
 .btn-link:disabled, .btn-link.disabled {
   color: #6c757d;
@@ -11323,6 +11323,7 @@ p {
 }
 .btn-xl {
   padding: 1.25rem 2.5rem;
+  color:rgba(255, 255, 255, 1);
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.125rem;
   font-weight: 700;
