@@ -36,6 +36,14 @@ require 'rails_helper'
 #      end
 # end
 
+# landing page test
+RSpec.describe('Rendering Landing Page', type: :feature) do
+  it 'valid inputs' do
+      visit root_path #going to landing page
+      expect(page).to(have_content('Maddie Wang'))
+  end
+end
+
 RSpec.describe('Creating an Event', type: :feature) do
      it 'valid inputs' do
           visit new_event_path
