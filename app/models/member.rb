@@ -32,7 +32,7 @@ class Member < ApplicationRecord
           member.email = auth.info.email
           member.points = 0
           member.paid_status = 0
-          member.access_type = 0
+          member.access_type = 1
           member.save
           return member
         end
