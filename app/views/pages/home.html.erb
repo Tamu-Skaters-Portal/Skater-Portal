@@ -42,8 +42,8 @@
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#about_us">About Us</a></li>
                         <li class="nav-item"><a class="nav-link" href="#portfolio">Officers</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Events</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team">Next Steps</a></li>
                         <li class="nav-item"><a class="nav-link" href="/auth/google_oauth2">Login</a></li>
                     </ul>
                 </div>
@@ -170,54 +170,33 @@
                 </div>
             </div>
         </section>
-        <!-- About-->
+        <!-- Events, this shows the yearly events the org takes part in-->
         <section class="page-section" id="about">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">About</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading text-uppercase">Events</h2>
+                    <h3 class="section-subheading text-muted">You can count on these events happening throughout the year!</h3>
                 </div>
                 <ul class="timeline">
                     <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
+                        <div class="timeline-image"><%= image_tag "skatepark.jpg", class: "rounded-circle img-fluid" %></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>2009-2011</h4>
-                                <h4 class="subheading">Our Humble Beginnings</h4>
+                                <h4>Every Friday</h4>
+                                <h4 class="subheading">General Meetings</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                            <div class="timeline-body"><p class="text-muted">These meetings will happen throughout the year at 7pm. They will occur at alternating local skateparks!</p></div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
+                        <div class="timeline-image"><%= image_tag "bisa.jpg", class: "rounded-circle img-fluid" %></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>March 2011</h4>
-                                <h4 class="subheading">An Agency is Born</h4>
+                                <h4>Battle at the Bisa</h4>
+                                <h4 class="subheading">Sbisa Dining Hall</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                            <div class="timeline-body"><p class="text-muted">This is held once a year at Texas A&M. It will involve a big game of skate and 2-3 brackets based on skill level. The winner will get prizes.<p class="text-muted"></p></div>
                         </div>
-                    </li>
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>December 2015</h4>
-                                <h4 class="subheading">Transition to Full Service</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>July 2020</h4>
-                                <h4 class="subheading">Phase Two Expansion</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
                     <li class="timeline-inverted">
                         <div class="timeline-image">
                             <h4>
@@ -225,7 +204,7 @@
                                 <br />
                                 Of Our
                                 <br />
-                                Story!
+                                Org!
                             </h4>
                         </div>
                     </li>
@@ -236,13 +215,12 @@
         <section class="page-section bg-light" id="team">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading text-uppercase">What do I do Next?</h2>
+                    <h3 class="section-subheading text-muted">Below you can find next steps to learn more about or join the org.</h3>
                 </div>
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
                             <h4>Parveen Anand</h4>
                             <p class="text-muted">Lead Designer</p>
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
@@ -252,17 +230,11 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
-                            <h4>D Petersen</h4>
-                            <p class="text-muted">Lead Marketer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                            <%= image_tag "tamu.png", class: "mx-auto rounded-circle" %>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
                             <h4>Larry Parker</h4>
                             <p class="text-muted">Lead Developer</p>
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i class="fab fa-twitter"></i></a>
@@ -317,29 +289,30 @@
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <h2 class="text-uppercase">Andrew Arzola</h2>
+                                    <p class="item-intro text-muted">President of TAMU Skaters</p>
                                     <ul class="list-inline">
                                         <li>
-                                            <strong>Client:</strong>
-                                            Threads
+                                            <strong>Major:</strong>
+                                            Computer Science - Class of 2023
                                         </li>
                                         <li>
-                                            <strong>Category:</strong>
-                                            Illustration
+                                            <strong>Started Skating:</strong>
+                                            2014
+                                        </li>
+                                        <li>
+                                            <strong>Favorite Trick:</strong>
+                                            Tre-Flip
                                         </li>
                                     </ul>
                                     <button class="btn btn-secondary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
-                                        Close Project
+                                        Close
                                     </button>
                                 </div>
                             </div>
@@ -352,29 +325,30 @@
         <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <h2 class="text-uppercase">Jahncurt Sarmiento</h2>
+                                    <p class="item-intro text-muted">Public Relations Officer of TAMU Skaters</p>
                                     <ul class="list-inline">
                                         <li>
-                                            <strong>Client:</strong>
-                                            Explore
+                                            <strong>Major:</strong>
+                                            Environmental Engineering - Class of 2024
                                         </li>
                                         <li>
-                                            <strong>Category:</strong>
-                                            Graphic Design
+                                            <strong>Started Skating:</strong>
+                                            2012
+                                        </li>
+                                        <li>
+                                            <strong>Favorite Trick:</strong>
+                                            Front Shuv
                                         </li>
                                     </ul>
                                     <button class="btn btn-secondary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
-                                        Close Project
+                                        Close
                                     </button>
                                 </div>
                             </div>
@@ -387,29 +361,30 @@
         <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <h2 class="text-uppercase">Maddie Wang</h2>
+                                    <p class="item-intro text-muted">Event Coordinator of TAMU Skaters</p>
                                     <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Finish
+                                       <li>
+                                            <strong>Major:</strong>
+                                            Biomedical Sciences - Class of 2025
                                         </li>
                                         <li>
-                                            <strong>Category:</strong>
-                                            Identity
+                                            <strong>Started Skating:</strong>
+                                            2019
+                                        </li>
+                                        <li>
+                                            <strong>Favorite Trick:</strong>
+                                            Fakie Shuv
                                         </li>
                                     </ul>
                                     <button class="btn btn-secondary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
-                                        Close Project
+                                        Close
                                     </button>
                                 </div>
                             </div>
@@ -422,29 +397,30 @@
         <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <h2 class="text-uppercase">Eduardo De La Garza</h2>
+                                    <p class="item-intro text-muted">General Officer of TAMU Skaters</p>
                                     <ul class="list-inline">
                                         <li>
-                                            <strong>Client:</strong>
-                                            Lines
+                                            <strong>Major:</strong>
+                                            Electrical Engineering - Class of 2023
                                         </li>
                                         <li>
-                                            <strong>Category:</strong>
-                                            Branding
+                                            <strong>Started Skating:</strong>
+                                            2015
+                                        </li>
+                                        <li>
+                                            <strong>Favorite Trick:</strong>
+                                            Backside Lip Slide
                                         </li>
                                     </ul>
                                     <button class="btn btn-secondary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
-                                        Close Project
+                                        Close
                                     </button>
                                 </div>
                             </div>
@@ -457,29 +433,30 @@
         <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <h2 class="text-uppercase">Daniel Westerveld</h2>
+                                    <p class="item-intro text-muted">Webmaster of TAMU Skaters</p>
                                     <ul class="list-inline">
                                         <li>
-                                            <strong>Client:</strong>
-                                            Southwest
+                                            <strong>Major:</strong>
+                                            Industrial Distribution - Class of 2023
                                         </li>
                                         <li>
-                                            <strong>Category:</strong>
-                                            Website Design
+                                            <strong>Started Skating:</strong>
+                                            2017
+                                        </li>
+                                        <li>
+                                            <strong>Favorite Trick:</strong>
+                                            Frontside 180
                                         </li>
                                     </ul>
                                     <button class="btn btn-secondary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
-                                        Close Project
+                                        Close
                                     </button>
                                 </div>
                             </div>
@@ -492,29 +469,30 @@
         <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <h2 class="text-uppercase">Shane Kosik</h2>
+                                    <p class="item-intro text-muted">Treasurer of TAMU Skaters</p>
                                     <ul class="list-inline">
                                         <li>
-                                            <strong>Client:</strong>
-                                            Window
+                                            <strong>Major:</strong>
+                                            Mechanical Engineering - Class of 2023
                                         </li>
                                         <li>
-                                            <strong>Category:</strong>
-                                            Photography
+                                            <strong>Started Skating:</strong>
+                                            2013
+                                        </li>
+                                        <li>
+                                            <strong>Favorite Trick:</strong>
+                                            Manuals and Kickflip
                                         </li>
                                     </ul>
                                     <button class="btn btn-secondary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
-                                        Close Project
+                                        Close
                                     </button>
                                 </div>
                             </div>
