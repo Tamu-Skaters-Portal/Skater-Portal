@@ -1,4 +1,6 @@
 class Attendance < ApplicationRecord
-    belongs_to :member
-    belongs_to :event
+     validates :member, presence: true
+     validates :event, presence: true
+     belongs_to :member
+     belongs_to :event
 end

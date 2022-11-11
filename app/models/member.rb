@@ -1,12 +1,15 @@
 class Member < ApplicationRecord
-
+     validates :name, presence: true
+     validates :email, presence: true
+     validates :access_type, presence: true
+     validates :paid_status, presence: true
+     validates :points, presence: true
 
   validates :name, presence: true
   validates :email, presence: true
   validates :access_type, presence: true
   validates :paid_status, presence: true
   validates :points, presence: true
-
 
     has_one :finance
     has_many :attendances
@@ -29,11 +32,13 @@ class Member < ApplicationRecord
           member.email = auth.info.email
           member.points = 0
           member.paid_status = 0
-          member.access_type = 0
+          #This is changed to 1 for testing purposes, needs to be changed back later
+          member.access_type = 1
           member.save
           return member
         end
       end
       member
     end
+
 end

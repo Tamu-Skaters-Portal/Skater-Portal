@@ -14,7 +14,7 @@
   <tbody>
     <% @finances.each do |finance| %>
       <tr>
-        <td><%= Member.where(id: finance.member_id).last.name %></td>
+        <td><%= Finance.show_member(finance) %></td>
         <td><%= finance.amount %></td>
         <td><%= link_to 'Show', finance %></td>
         <td><%= link_to 'Edit', edit_finance_path(finance) %></td>
@@ -23,6 +23,15 @@
     <% end %>
   </tbody>
 </table>
+
+<br>
+
+<tbody>
+  <tr>
+    <td>Total amount of money: </td>
+    <td><%= Finance.sum_finance %></td>
+  </tr>
+</tbody>
 
 <br>
 

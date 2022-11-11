@@ -1,3 +1,5 @@
 class Event < ApplicationRecord
-    has_one :attendance
+     validates :date, presence: true
+     validates :location, presence: true
+     has_one :attendance
 end

@@ -11,35 +11,41 @@
     </div>
   <% end %>
 
+  <%# Only Officers can change %>
   <div class="field">
     <%= form.label :name %>
     <%= form.text_field :name %>
   </div>
 
+  <%# Only Officers can change %>
   <div class="field">
     <%= form.label :email %>
     <%= form.text_field :email %>
   </div>
 
+  <%# Only Officers can change %>
   <div class="field">
     <%= form.label :token %>
     <%= form.text_field :token %>
   </div>
 
-  <div class="field">
-    <%= form.label :access_type %>
-    <%= form.number_field :access_type %>
-  </div>
+  <%# Only Officers can change %>
+    <div class="field">
+      <%= form.label :access_type %>
+      <%= form.number_field :access_type %>
+    </div>
 
-  <div class="field">
-    <%= form.label :paid_status %>
-    <%= form.number_field :paid_status %>
-  </div>
+    <%# Only Officers can change %>
+    <div class="field">
+      <%= form.label :paid_status %>
+      <%= form.number_field :paid_status %>
+    </div>
 
-  <div class="field">
-    <%= form.label :points %>
-    <%= form.number_field :points %>
-  </div>
+    <%# Only Officers can change %>
+    <div class="field">
+      <%= form.label :points %>
+      <%= form.number_field :points %>
+    </div>
 
   <div class="actions">
     <%= form.submit %>
