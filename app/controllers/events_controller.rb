@@ -11,7 +11,12 @@ class EventsController < ApplicationController
      def show
           @current_member ||= Member.find_by_token(cookies[:token]) if cookies[:token]
           @current_event = Event.find(params[:id])
-          Event.sign_in_page(@current_member, @current_event)
+          if Event.sign_in_page(@current_member, @current_event)
+               flash[:notice] = "Member has received points for the event."
+          else
+               flash[:notice] = 'Member is not signed in, please sign in to receive points.'
+               redirect_to '/auth/google_oauth2'
+          end
      end
 
      # GET /events/new
