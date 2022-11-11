@@ -9,6 +9,9 @@ class Event < ApplicationRecord
           # 21600 for 6 hour offset that comes with utc time zone
           if current_member && DateTime.now.utc > current_event.date + 19800 && DateTime.now.utc < current_event.date + 23400 
                Attendance.create_attendance(current_member, current_event)
+               return 0
+          elsif current_member
+               return 1
           else
                # Alert they cannot sign in to the event without being signed in to their account
                #redirect_to('../../auth/google_oauth2') 
