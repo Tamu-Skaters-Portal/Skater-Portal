@@ -3,11 +3,16 @@ class EventsController < ApplicationController
 
      # GET /events or /events.json
      def index
+          @current_member ||= Member.find_by_token(cookies[:token]) if cookies[:token]
           @events = Event.all
      end
 
      # GET /events/1 or /events/1.json
-     def show; end
+     def show
+          @current_member ||= Member.find_by_token(cookies[:token]) if cookies[:token]
+          @current_event = Event.find(params[:id])
+          Event.sign_in_page(@current_member, @current_event)
+     end
 
      # GET /events/new
      def new
