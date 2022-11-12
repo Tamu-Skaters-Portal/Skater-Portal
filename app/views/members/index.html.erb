@@ -29,16 +29,16 @@
 
 <h1>Members</h1>
 
-<table>
+<table class="table table-striped">
   <thead>
     <tr>
       <%# Table column titles %>
-      <th>Name</th>
-      <th>Email</th>
-      <th>Token</th>
-      <th>Access type</th>
-      <th>Paid status</th>
-      <th>Points</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Token</th>
+      <th scope="col">Access type</th>
+      <th scope="col">Paid status</th>
+      <th scope="col">Points</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -47,7 +47,7 @@
     <%# for each of the members how their name, email, token, access type, paid status, and points and give the option to show edit or destroy %>
     <% @members.each do |member| %>
       <tr>
-        <td><%= member.name %></td>
+        <th scope="row"><%= member.name %></td>
         <td><%= member.email %></td>
         <td><%= member.token %></td>
         <td><%= member.access_type %></td>
