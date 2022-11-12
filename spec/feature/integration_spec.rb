@@ -36,6 +36,14 @@ require 'rails_helper'
 #      end
 # end
 
+# landing page test
+RSpec.describe('Rendering Landing Page', type: :feature) do
+  it 'valid inputs' do
+      visit root_path #going to landing page
+      expect(page).to(have_content('Maddie Wang'))
+  end
+end
+
 RSpec.describe('Creating an Event', type: :feature) do
      it 'valid inputs' do
           visit new_event_path
@@ -52,6 +60,9 @@ end
 RSpec.describe('Creating an Attendance', type: :feature) do
      it 'valid inputs' do
           visit new_member_path
+
+          expect(page).to(have_content('Create Member'))
+
           fill_in 'Name', with: 'Nam Cao'
           fill_in 'Email', with: 'Email@email.com'
           fill_in 'Access type', with: 1
@@ -72,7 +83,7 @@ RSpec.describe('Creating an Attendance', type: :feature) do
 
           click_on 'Create Attendance'
           visit attendances_path
-          expect(page).to(have_content('Nam Cao'))
+          expect(page).to(have_content('Nam Cao')) #! Nam Cao not found
           expect(page).to(have_content('Nam house'))
      end
 end

@@ -2,6 +2,8 @@
 
 <h1>Events</h1>
 
+<%@current_member ||= Member.find_by_token(cookies[:token]) if cookies[:token] %>
+
 <table>
   <thead>
     <tr>
@@ -19,8 +21,10 @@
         <td><%= event.date %></td>
         <td><%= event.location %></td>
         <td><%= link_to 'Get Points', event%></td>
-        <td><%= link_to 'Edit', edit_event_path(event) %></td>
-        <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% if @current_member && @current_member.access_type == 1 %>
+          <td><%= link_to 'Edit', edit_event_path(event) %></td>
+          <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>
@@ -28,8 +32,11 @@
 
 <br>
 
-<button> <%# Creates a button%>
-<b>
-<%= link_to 'New Event', new_event_path %>
-</b>
-</button>
+
+<% if @current_member && @current_member.access_type == 1 %>
+  <button> <%# Creates a button%>
+  <b>
+  <%= link_to 'New Event', new_event_path %>
+  </b>
+  </button>
+<% end %>
