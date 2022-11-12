@@ -59,6 +59,7 @@ end
 
 RSpec.describe('Creating an Attendance', type: :feature) do
      it 'valid inputs' do
+          #TODO: create a member with acccess type 1 somehow here
           visit new_member_path
 
           expect(page).to(have_content('Create Member'))
