@@ -32,11 +32,11 @@
 
 <h1>Finances</h1>
 
-<table>
+<table class="table table-striped">
   <thead>
     <tr>
-      <th>Member</th>
-      <th>Amount</th>
+      <th scope="col">Member</th>
+      <th scope="col">Amount</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -44,7 +44,7 @@
   <tbody>
     <% @finances.each do |finance| %>
       <tr>
-        <td><%= Finance.show_member(finance) %></td>
+        <th scope="row"><%= Finance.show_member(finance) %></td>
         <td><%= finance.amount %></td>
         <td><%= link_to 'Show', finance %></td>
         <td><%= link_to 'Edit', edit_finance_path(finance) %></td>
