@@ -60,13 +60,14 @@ end
 RSpec.describe('Creating an Attendance', type: :feature) do
      it 'valid inputs' do
           visit new_member_path
+
+          expect(page).to(have_content('Create Member'))
+
           fill_in 'Name', with: 'Nam Cao'
           fill_in 'Email', with: 'Email@email.com'
           fill_in 'Access type', with: 1
           fill_in 'Paid status', with: 25
           fill_in 'Points', with: 2
-
-          expect(page).to(have_content('Create member'))
 
           click_on 'Create Member'
 
