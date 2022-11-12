@@ -20,4 +20,6 @@ Rails.application.routes.draw do
 
   get 'auth/:provider/callback', to: 'sessions#google_auth'
   get 'auth/failure', to: redirect('/')
+
+  #get sign_in_page => 'events#sign_in_page', :as => 'events_sign_in'
 end
