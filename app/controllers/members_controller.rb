@@ -9,11 +9,8 @@ class MembersController < ApplicationController
     else
       # redirect_to member_url(Member.find_one(@current_member.id))
 
-      # TODO: iterate through memmbers until we find a matching token
-      # TODO: if match then redirect to that member
-
-      # redirect_to Member.find(@current_member.id)
-      # redirect_to member_url(Member.find_by_token(@current_member.token))
+      #iterate through memmbers until we find a matching token
+      #if match then redirect to that member
 
       indexOfTokenMatch = 0
       for i in 1..Member.count do
