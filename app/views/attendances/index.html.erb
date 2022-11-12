@@ -1,5 +1,35 @@
 <p id="notice"><%= notice %></p>
 
+<%@current_member ||= Member.find_by_token(cookies[:token]) if cookies[:token]%>
+
+<% if @current_member && @current_member.access_type == 1 %> 
+  <button> <%# Creates a button%>
+  <b>
+    <%= link_to 'Members', members_path %> <%# Create a new member button %>
+  </b>
+  </button>
+<%else%>
+  <button> <%# Creates a button%>
+  <b>
+    <%= link_to 'My Profile', members_path %> <%# Create a new member button %>
+  </b>
+  </button>
+<%end%>
+
+<button> <%# Creates a button%>
+<b>
+  <%= link_to 'Events', events_path %> <%# Create a new member button %>
+</b>
+</button>
+
+<% if @current_member && @current_member.access_type == 1 %> 
+  <button> <%# Creates a button%>
+  <b>
+    <%= link_to 'Finances', finances_path %> <%# Create a new member button %>
+  </b>
+  </button>
+<%end%>
+
 <h1>Attendances</h1>
 
 <table>
@@ -27,3 +57,7 @@
 <br>
 
 <%= link_to 'New Attendance', new_attendance_path %>
+
+<br>
+<br>
+<%= link_to 'Back to Home', root_path %>
