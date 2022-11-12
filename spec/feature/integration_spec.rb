@@ -66,6 +66,8 @@ RSpec.describe('Creating an Attendance', type: :feature) do
           fill_in 'Paid status', with: 25
           fill_in 'Points', with: 2
 
+          expect(page).to(have_content('Create member'))
+
           click_on 'Create Member'
 
           visit new_event_path
@@ -80,7 +82,7 @@ RSpec.describe('Creating an Attendance', type: :feature) do
 
           click_on 'Create Attendance'
           visit attendances_path
-          expect(page).to(have_content('Nam Cao'))
+          expect(page).to(have_content('Nam Cao')) #! Nam Cao not found
           expect(page).to(have_content('Nam house'))
      end
 end
