@@ -63,3 +63,4 @@ end
 gem 'figaro'
 gem 'omniauth-google-oauth2'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+gem 'seed_dump'
