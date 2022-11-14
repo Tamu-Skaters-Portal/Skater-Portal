@@ -13,7 +13,6 @@ class MembersController < ApplicationController
 
                # iterate through memmbers until we find a matching token
                # if match then redirect to that member
-
                # indexOfTokenMatch = 0
                # for i in 1..Member.count do
                #      # puts "--------Member Token from array: " + Member.find(i).token
