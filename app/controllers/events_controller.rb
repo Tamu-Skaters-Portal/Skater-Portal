@@ -13,12 +13,12 @@ class EventsController < ApplicationController
           @current_event = Event.find(params[:id])
           @val = Event.sign_in_page(@current_member, @current_event)
           if @val != 1
-               flash[:notice] = "Member has received points for the event."
+               flash[:notice] = 'Member has received points for the event.'
           elsif @val == 1
-               flash[:notice] = "Event 60 minute sign in window is over."
+               flash[:notice] = 'Event 60 minute sign in window is over.'
           else
                flash[:notice] = 'Member is not signed in, please sign in to receive points.'
-               redirect_to '/auth/google_oauth2'
+               redirect_to('/auth/google_oauth2')
           end
      end
 
@@ -36,7 +36,10 @@ class EventsController < ApplicationController
 
           respond_to do |format|
                if @event.save
-                    format.html { redirect_to(@event, notice: 'Event was successfully created.') } #message that returns if event was successfully created
+                    # message that returns if event was successfully created
+                    format.html do
+                         redirect_to(@event, notice: 'Event was successfully created.')
+                    end
                     format.json { render(:show, status: :created, location: @event) }
                else
                     format.html { render(:new, status: :unprocessable_entity) }
@@ -49,7 +52,10 @@ class EventsController < ApplicationController
      def update
           respond_to do |format|
                if @event.update(event_params)
-                    format.html { redirect_to(@event, notice: 'Event was successfully updated.') } #message that returns if event was successfully updated
+                    # message that returns if event was successfully updated
+                    format.html do
+                         redirect_to(@event, notice: 'Event was successfully updated.')
+                    end
                     format.json { render(:show, status: :ok, location: @event) }
                else
                     format.html { render(:edit, status: :unprocessable_entity) }
@@ -62,7 +68,10 @@ class EventsController < ApplicationController
      def destroy
           @event.destroy
           respond_to do |format|
-               format.html { redirect_to(events_url, notice: 'Event was successfully destroyed.') } #message that returns if event was successfully destroyed
+               # message that returns if event was successfully destroyed
+               format.html do
+                    redirect_to(events_url, notice: 'Event was successfully destroyed.')
+               end
                format.json { head(:no_content) }
           end
      end
