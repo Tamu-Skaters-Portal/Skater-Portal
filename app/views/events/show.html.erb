@@ -10,5 +10,16 @@
   <%= @event.location %>
 </p>
 
-<%= link_to 'Edit', edit_event_path(@event) %> |
+<%@current_member ||= Member.find_by_token(cookies[:token]) if cookies[:token]%>
+<% if @current_member && @current_member.access_type == 1 %> 
+  <%= link_to 'Edit', edit_event_path(@event) %> |
+<%else%>
+<%#! Else should be empty be default %>
+<%end%>
+
 <%= link_to 'Back', events_path %>
+
+
+
+
+

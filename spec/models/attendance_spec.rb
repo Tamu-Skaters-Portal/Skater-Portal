@@ -2,7 +2,7 @@
 
 # RSpec.describe Attendance, type: :model do
 #   before(:all) do
-#     @member = Member.create(name: "nam", email: "email@email.com", access_type: 1, paid_status: 25, points: 2)
+#     @member = Member.create(name: "nam", email: "test@email.com", access_type: 1, paid_status: 5, points: 2)
 #     @event = Event.create(location: "house", date: "2022-10-18 03:00:00")
 #     @attendance = Attendance.create(member_id: 1, event_id: 1)
 #   end

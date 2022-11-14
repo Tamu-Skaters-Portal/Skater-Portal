@@ -1,13 +1,47 @@
 <p id="notice"><%= notice %></p>
 
+<%@current_member ||= Member.find_by_token(cookies[:token]) if cookies[:token]%>
+
+<% if @current_member && @current_member.access_type == 1 %> 
+  <button> <%# Creates a button%>
+  <b>
+    <%= link_to 'Members', members_path %> <%# Create a new member button %>
+  </b>
+  </button>
+<%else%>
+  <button> <%# Creates a button%>
+  <b>
+    <%= link_to 'My Profile', members_path %> <%# Create a new member button %>
+  </b>
+  </button>
+<%end%>
+
+<% if @current_member && @current_member.access_type == 1 %> 
+  <button> <%# Creates a button%>
+  <b>
+    <%= link_to 'Finances', finances_path %> <%# Create a new member button %>
+  </b>
+  </button>
+<%end%>
+
+<% if @current_member && @current_member.access_type == 1 %> 
+  <button> <%# Creates a button%>
+  <b>
+    <%= link_to 'Attendances', attendances_path %> <%# Create a new member button %>
+  </b>
+  </button>
+<%end%>
+
 <h1>Events</h1>
 
-<table>
+<%@current_member ||= Member.find_by_token(cookies[:token]) if cookies[:token] %>
+
+<table class="table table-striped">
   <thead>
     <tr>
       <%# table column titles %>
-      <th>Date</th>
-      <th>Location</th>
+      <th scope="col">Date</th>
+      <th scope="col">Location</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,11 +50,13 @@
     <% @events.each do |event| %>
       <tr>
         <%# For each of the members show their date and location and give the option to show edit or destroy %>
-        <td><%= event.date %></td>
+        <th scope="row"><%= event.date %></td>
         <td><%= event.location %></td>
-        <td><%= link_to 'Show', event %></td>
-        <td><%= link_to 'Edit', edit_event_path(event) %></td>
-        <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Get Points', event%></td>
+        <% if @current_member && @current_member.access_type == 1 %>
+          <td><%= link_to 'Edit', edit_event_path(event) %></td>
+          <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>
@@ -28,8 +64,10 @@
 
 <br>
 
-<button> <%# Creates a button%>
-<b>
-<%= link_to 'New Event', new_event_path %>
-</b>
-</button>
+
+<% if @current_member && @current_member.access_type == 1 %>
+  <%= link_to 'New Event', new_event_path %>
+<% end %>
+<br>
+<br>
+<%= link_to 'Back to Home', root_path %>

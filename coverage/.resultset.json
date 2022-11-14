@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/csce431/spec/feature/integration_spec.rb": {
+      "/csce431/csce431/Skater-Portal/spec/feature/integration_spec.rb": {
         "lines": [
           1,
           null,
@@ -12,40 +12,38 @@
           null,
           null,
           null,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          null,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
           null,
           null,
           null,
-          1,
-          1,
-          1,
-          1,
-          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
           null,
           1,
           1,
+          null,
           1,
           1,
           null,
@@ -56,26 +54,141 @@
           1,
           1,
           1,
-          1,
-          1,
-          1,
-          null,
-          1,
           null,
           1,
           1,
           1,
           null,
+          null,
+          null,
           1,
+          null,
+          null,
           null,
           1,
           1,
-          1,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
           null,
           1,
-          1,
-          1,
-          1,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
           null,
           null,
           null,
@@ -134,7 +247,7 @@
           null
         ]
       },
-      "/csce431/spec/rails_helper.rb": {
+      "/csce431/csce431/Skater-Portal/spec/rails_helper.rb": {
         "lines": [
           null,
           1,
@@ -202,7 +315,7 @@
           null
         ]
       },
-      "/csce431/config/environment.rb": {
+      "/csce431/csce431/Skater-Portal/config/environment.rb": {
         "lines": [
           null,
           1,
@@ -211,7 +324,7 @@
           1
         ]
       },
-      "/csce431/config/application.rb": {
+      "/csce431/csce431/Skater-Portal/config/application.rb": {
         "lines": [
           1,
           null,
@@ -253,7 +366,7 @@
           null
         ]
       },
-      "/csce431/config/boot.rb": {
+      "/csce431/csce431/Skater-Portal/config/boot.rb": {
         "lines": [
           1,
           null,
@@ -261,7 +374,7 @@
           1
         ]
       },
-      "/csce431/config/environments/test.rb": {
+      "/csce431/csce431/Skater-Portal/config/environments/test.rb": {
         "lines": [
           1,
           null,
@@ -325,7 +438,7 @@
           null
         ]
       },
-      "/csce431/config/initializers/application_controller_renderer.rb": {
+      "/csce431/csce431/Skater-Portal/config/initializers/application_controller_renderer.rb": {
         "lines": [
           null,
           null,
@@ -337,7 +450,7 @@
           null
         ]
       },
-      "/csce431/config/initializers/assets.rb": {
+      "/csce431/csce431/Skater-Portal/config/initializers/assets.rb": {
         "lines": [
           null,
           null,
@@ -355,7 +468,7 @@
           null
         ]
       },
-      "/csce431/config/initializers/backtrace_silencers.rb": {
+      "/csce431/csce431/Skater-Portal/config/initializers/backtrace_silencers.rb": {
         "lines": [
           null,
           null,
@@ -367,7 +480,7 @@
           1
         ]
       },
-      "/csce431/config/initializers/content_security_policy.rb": {
+      "/csce431/csce431/Skater-Portal/config/initializers/content_security_policy.rb": {
         "lines": [
           null,
           null,
@@ -401,7 +514,7 @@
           null
         ]
       },
-      "/csce431/config/initializers/cookies_serializer.rb": {
+      "/csce431/csce431/Skater-Portal/config/initializers/cookies_serializer.rb": {
         "lines": [
           null,
           null,
@@ -410,7 +523,7 @@
           1
         ]
       },
-      "/csce431/config/initializers/filter_parameter_logging.rb": {
+      "/csce431/csce431/Skater-Portal/config/initializers/filter_parameter_logging.rb": {
         "lines": [
           null,
           null,
@@ -420,7 +533,7 @@
           null
         ]
       },
-      "/csce431/config/initializers/inflections.rb": {
+      "/csce431/csce431/Skater-Portal/config/initializers/inflections.rb": {
         "lines": [
           null,
           null,
@@ -440,7 +553,7 @@
           null
         ]
       },
-      "/csce431/config/initializers/mime_types.rb": {
+      "/csce431/csce431/Skater-Portal/config/initializers/mime_types.rb": {
         "lines": [
           null,
           null,
@@ -448,7 +561,7 @@
           null
         ]
       },
-      "/csce431/config/initializers/omniauth.rb": {
+      "/csce431/csce431/Skater-Portal/config/initializers/omniauth.rb": {
         "lines": [
           1,
           1,
@@ -458,7 +571,7 @@
           null
         ]
       },
-      "/csce431/config/initializers/permissions_policy.rb": {
+      "/csce431/csce431/Skater-Portal/config/initializers/permissions_policy.rb": {
         "lines": [
           null,
           null,
@@ -473,7 +586,7 @@
           null
         ]
       },
-      "/csce431/config/initializers/wrap_parameters.rb": {
+      "/csce431/csce431/Skater-Portal/config/initializers/wrap_parameters.rb": {
         "lines": [
           null,
           null,
@@ -491,7 +604,7 @@
           null
         ]
       },
-      "/csce431/config/routes.rb": {
+      "/csce431/csce431/Skater-Portal/config/routes.rb": {
         "lines": [
           1,
           1,
@@ -515,59 +628,42 @@
           null,
           1,
           1,
+          null,
+          null,
           null
         ]
       },
-      "/csce431/app/helpers/application_helper.rb": {
+      "/csce431/csce431/Skater-Portal/app/helpers/application_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/csce431/app/helpers/attendances_helper.rb": {
+      "/csce431/csce431/Skater-Portal/app/helpers/attendances_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/csce431/app/helpers/events_helper.rb": {
+      "/csce431/csce431/Skater-Portal/app/helpers/events_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/csce431/app/helpers/finances_helper.rb": {
+      "/csce431/csce431/Skater-Portal/app/helpers/finances_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/csce431/app/helpers/members_helper.rb": {
+      "/csce431/csce431/Skater-Portal/app/helpers/members_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/csce431/spec/helpers/attendances_helper_spec.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/csce431/spec/helpers/events_helper_spec.rb": {
+      "/csce431/csce431/Skater-Portal/spec/helpers/attendances_helper_spec.rb": {
         "lines": [
           null,
           null,
@@ -586,7 +682,7 @@
           null
         ]
       },
-      "/csce431/spec/helpers/finances_helper_spec.rb": {
+      "/csce431/csce431/Skater-Portal/spec/helpers/events_helper_spec.rb": {
         "lines": [
           null,
           null,
@@ -605,7 +701,7 @@
           null
         ]
       },
-      "/csce431/spec/helpers/members_helper_spec.rb": {
+      "/csce431/csce431/Skater-Portal/spec/helpers/finances_helper_spec.rb": {
         "lines": [
           null,
           null,
@@ -624,7 +720,7 @@
           null
         ]
       },
-      "/csce431/spec/models/attendance_spec.rb": {
+      "/csce431/csce431/Skater-Portal/spec/helpers/members_helper_spec.rb": {
         "lines": [
           null,
           null,
@@ -643,15 +739,8 @@
           null
         ]
       },
-      "/csce431/spec/models/event_spec.rb": {
+      "/csce431/csce431/Skater-Portal/spec/models/attendance_spec.rb": {
         "lines": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
           null,
           null,
           null,
@@ -669,134 +758,8 @@
           null
         ]
       },
-      "/csce431/spec/models/finance_spec.rb": {
+      "/csce431/csce431/Skater-Portal/spec/models/event_spec.rb": {
         "lines": [
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/csce431/spec/models/member_spec.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/csce431/spec/requests/attendances_spec.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
           null,
           null,
           null,
@@ -821,7 +784,25 @@
           null
         ]
       },
-      "/csce431/spec/requests/events_spec.rb": {
+      "/csce431/csce431/Skater-Portal/spec/models/finance_spec.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/csce431/csce431/Skater-Portal/spec/models/member_spec.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/csce431/csce431/Skater-Portal/spec/requests/attendances_spec.rb": {
         "lines": [
           null,
           null,
@@ -955,7 +936,7 @@
           null
         ]
       },
-      "/csce431/spec/requests/finances_spec.rb": {
+      "/csce431/csce431/Skater-Portal/spec/requests/events_spec.rb": {
         "lines": [
           null,
           null,
@@ -1089,7 +1070,7 @@
           null
         ]
       },
-      "/csce431/spec/requests/members_spec.rb": {
+      "/csce431/csce431/Skater-Portal/spec/requests/finances_spec.rb": {
         "lines": [
           null,
           null,
@@ -1223,7 +1204,141 @@
           null
         ]
       },
-      "/csce431/spec/routing/attendances_routing_spec.rb": {
+      "/csce431/csce431/Skater-Portal/spec/requests/members_spec.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/csce431/csce431/Skater-Portal/spec/routing/attendances_routing_spec.rb": {
         "lines": [
           null,
           null,
@@ -1264,7 +1379,7 @@
           null
         ]
       },
-      "/csce431/spec/routing/events_routing_spec.rb": {
+      "/csce431/csce431/Skater-Portal/spec/routing/events_routing_spec.rb": {
         "lines": [
           null,
           null,
@@ -1305,7 +1420,7 @@
           null
         ]
       },
-      "/csce431/spec/routing/finances_routing_spec.rb": {
+      "/csce431/csce431/Skater-Portal/spec/routing/finances_routing_spec.rb": {
         "lines": [
           null,
           null,
@@ -1346,7 +1461,7 @@
           null
         ]
       },
-      "/csce431/spec/routing/members_routing_spec.rb": {
+      "/csce431/csce431/Skater-Portal/spec/routing/members_routing_spec.rb": {
         "lines": [
           null,
           null,
@@ -1387,7 +1502,7 @@
           null
         ]
       },
-      "/csce431/spec/unit/unit_spec.rb": {
+      "/csce431/csce431/Skater-Portal/spec/unit/unit_spec.rb": {
         "lines": [
           1,
           null,
@@ -1429,7 +1544,7 @@
           null
         ]
       },
-      "/csce431/app/models/member.rb": {
+      "/csce431/csce431/Skater-Portal/app/models/member.rb": {
         "lines": [
           1,
           1,
@@ -1440,13 +1555,19 @@
           null,
           1,
           1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
           null,
           null,
           null,
           null,
           1,
           1,
-          2,
+          0,
           null,
           null,
           null,
@@ -1459,75 +1580,25 @@
           0,
           0,
           0,
-          0,
-          0,
-          0,
-          null,
           null,
           0,
+          0,
+          0,
+          null,
+          null,
+          0,
           null,
           null
         ]
       },
-      "/csce431/app/models/application_record.rb": {
+      "/csce431/csce431/Skater-Portal/app/models/application_record.rb": {
         "lines": [
           1,
           1,
           null
         ]
       },
-      "/csce431/spec/views/attendances/edit.html.erb_spec.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/csce431/spec/views/attendances/index.html.erb_spec.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/csce431/spec/views/attendances/new.html.erb_spec.rb": {
+      "/csce431/csce431/Skater-Portal/spec/views/attendances/edit.html.erb_spec.rb": {
         "lines": [
           null,
           null,
@@ -1552,143 +1623,7 @@
           null
         ]
       },
-      "/csce431/spec/views/attendances/show.html.erb_spec.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/csce431/spec/views/events/edit.html.erb_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/csce431/spec/views/events/index.html.erb_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/csce431/spec/views/events/new.html.erb_spec.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/csce431/spec/views/events/show.html.erb_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/csce431/spec/views/finances/edit.html.erb_spec.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/csce431/spec/views/finances/index.html.erb_spec.rb": {
+      "/csce431/csce431/Skater-Portal/spec/views/attendances/index.html.erb_spec.rb": {
         "lines": [
           null,
           null,
@@ -1714,7 +1649,7 @@
           null
         ]
       },
-      "/csce431/spec/views/finances/new.html.erb_spec.rb": {
+      "/csce431/csce431/Skater-Portal/spec/views/attendances/new.html.erb_spec.rb": {
         "lines": [
           null,
           null,
@@ -1739,7 +1674,7 @@
           null
         ]
       },
-      "/csce431/spec/views/finances/show.html.erb_spec.rb": {
+      "/csce431/csce431/Skater-Portal/spec/views/attendances/show.html.erb_spec.rb": {
         "lines": [
           null,
           null,
@@ -1759,45 +1694,36 @@
           null
         ]
       },
-      "/csce431/spec/views/members/edit.html.erb_spec.rb": {
+      "/csce431/csce431/Skater-Portal/spec/views/events/edit.html.erb_spec.rb": {
         "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
           null,
           null,
           null,
           null,
           null,
           null,
+          1,
+          1,
           null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
+          1,
+          1,
           null,
           null,
           null
         ]
       },
-      "/csce431/spec/views/members/index.html.erb_spec.rb": {
+      "/csce431/csce431/Skater-Portal/spec/views/events/index.html.erb_spec.rb": {
         "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
           null,
           null,
           null,
@@ -1810,10 +1736,15 @@
           null,
           null,
           null,
+          1,
+          1,
+          1,
           null,
-          null,
-          null,
-          null,
+          null
+        ]
+      },
+      "/csce431/csce431/Skater-Portal/spec/views/events/new.html.erb_spec.rb": {
+        "lines": [
           null,
           null,
           null,
@@ -1834,7 +1765,123 @@
           null
         ]
       },
-      "/csce431/spec/views/members/new.html.erb_spec.rb": {
+      "/csce431/csce431/Skater-Portal/spec/views/events/show.html.erb_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/csce431/csce431/Skater-Portal/spec/views/finances/edit.html.erb_spec.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/csce431/csce431/Skater-Portal/spec/views/finances/index.html.erb_spec.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/csce431/csce431/Skater-Portal/spec/views/finances/new.html.erb_spec.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/csce431/csce431/Skater-Portal/spec/views/finances/show.html.erb_spec.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/csce431/csce431/Skater-Portal/spec/views/members/edit.html.erb_spec.rb": {
         "lines": [
           null,
           null,
@@ -1871,7 +1918,82 @@
           null
         ]
       },
-      "/csce431/spec/views/members/show.html.erb_spec.rb": {
+      "/csce431/csce431/Skater-Portal/spec/views/members/index.html.erb_spec.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/csce431/csce431/Skater-Portal/spec/views/members/new.html.erb_spec.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/csce431/csce431/Skater-Portal/spec/views/members/show.html.erb_spec.rb": {
         "lines": [
           null,
           null,
@@ -1899,87 +2021,20 @@
           null
         ]
       },
-      "/csce431/app/controllers/members_controller.rb": {
+      "/csce431/csce431/Skater-Portal/app/controllers/pages_controller.rb": {
         "lines": [
           1,
           1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null,
-          1,
-          2,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null,
-          1,
-          2,
-          null,
-          2,
-          2,
-          4,
-          2,
-          null,
-          0,
-          0,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null,
-          1,
-          2,
-          null,
-          null,
-          null,
-          1,
-          2,
-          null,
           null
         ]
       },
-      "/csce431/app/controllers/application_controller.rb": {
+      "/csce431/csce431/Skater-Portal/app/controllers/application_controller.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/csce431/app/controllers/events_controller.rb": {
+      "/csce431/csce431/Skater-Portal/app/controllers/events_controller.rb": {
         "lines": [
           1,
           1,
@@ -1987,6 +2042,27 @@
           null,
           1,
           1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
           null,
           null,
           null,
@@ -1994,9 +2070,19 @@
           null,
           null,
           1,
-          2,
+          1,
+          null,
+          1,
+          1,
+          1,
           null,
           null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
           null,
           1,
           null,
@@ -2019,90 +2105,10 @@
           1,
           0,
           0,
-          0,
-          0,
           null,
           0,
           0,
           null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null,
-          1,
-          2,
-          null,
-          null,
-          null,
-          1,
-          2,
-          null,
-          null
-        ]
-      },
-      "/csce431/app/models/event.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          null
-        ]
-      },
-      "/csce431/app/controllers/attendances_controller.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          0,
-          0,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          0,
-          0,
-          0,
           0,
           null,
           0,
@@ -2117,6 +2123,7 @@
           1,
           0,
           0,
+          null,
           0,
           0,
           null,
@@ -2138,17 +2145,149 @@
           null
         ]
       },
-      "/csce431/app/models/attendance.rb": {
+      "/csce431/csce431/Skater-Portal/app/models/event.rb": {
         "lines": [
           1,
           1,
           1,
           1,
+          null,
           1,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          1,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
+      "/csce431/csce431/Skater-Portal/app/controllers/members_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
           null
         ]
       }
     },
-    "timestamp": 1667587739
+    "timestamp": 1668408547
   }
 }
