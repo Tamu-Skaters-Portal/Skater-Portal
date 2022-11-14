@@ -13,19 +13,24 @@ class MembersController < ApplicationController
 
                # iterate through memmbers until we find a matching token
                # if match then redirect to that member
+               # indexOfTokenMatch = 0
+               # for i in 1..Member.count do
+               #      # puts "--------Member Token from array: " + Member.find(i).token
+               #      # puts "--------Member Token from current member: " + cookies[:token]
 
-               indexOfTokenMatch = 0
-               for i in 1..Member.count do
-                    # puts "--------Member Token from array: " + Member.find(i).token
-                    # puts "--------Member Token from current member: " + cookies[:token]
+               #      indexOfTokenMatch = i if Member.find(i).token == cookies[:token]
+               # end
 
-                    indexOfTokenMatch = i if Member.find(i).token == cookies[:token]
+               if Member.count <= 0
+                    redirect_to('/auth/google_oauth2')
                end
-
-               if indexOfTokenMatch == 0
-                    redirect_to(root_path) # consider changing this to log in oauth page
-               elsif !indexOfTokenMatch.nil?
-                    redirect_to(action: 'show', id: indexOfTokenMatch)
+               
+               @current_member ||= Member.find_by_token(cookies[:token]) if cookies[:token]
+               
+               if @current_member == nil
+                    redirect_to('/auth/google_oauth2')
+               else
+                    redirect_to(action: 'show', id: @current_member.id)
                end
           end
      end
