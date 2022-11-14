@@ -6,6 +6,8 @@ class MembersController < ApplicationController
     @current_member ||= Member.find_by_token(cookies[:token]) if cookies[:token]
     if @current_member && @current_member.access_type == 1
       @members = Member.all
+    elsif @current_member == nil
+          redirect_to '/auth/google_oauth2'
     else
       # redirect_to member_url(Member.find_one(@current_member.id))
 
