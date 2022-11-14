@@ -4,10 +4,12 @@ class AttendancesController < ApplicationController
      # GET /attendances or /attendances.json
      def index
           @current_member ||= Member.find_by_token(cookies[:token]) if cookies[:token]
-          if @current_member && @current_member.access_type == 1 # checking the access type of the current member. If it is 1 and not 0 then show attendances page
+
+          # checking the access type of the current member. If it is 1 and not 0 then show attendances page
+          if @current_member && @current_member.access_type == 1
                @attendances = Attendance.all
           else
-               redirect_to(root_path) #takes us back the the landing page
+               redirect_to(root_path) # takes us back the the landing page
           end
      end
 

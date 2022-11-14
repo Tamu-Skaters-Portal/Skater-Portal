@@ -7,16 +7,13 @@ class Event < ApplicationRecord
           # Compare date time, give a 60 minute period in which members can sign in
           # 1800 for 30 minutes to sign in before or after the event starts
           # 21600 for 6 hour offset that comes with utc time zone
-          if current_member && DateTime.now.utc > current_event.date + 19800 && DateTime.now.utc < current_event.date + 23400 
+          @time1 = DateTime.now.utc > current_event.date + 19_800
+          @time2 = DateTime.now.utc < current_event.date + 23_400
+          if current_member && @time1 && @time2
                Attendance.create_attendance(current_member, current_event)
-               return 0
+               0
           elsif current_member
-               return 1
-          else
-               # Alert they cannot sign in to the event without being signed in to their account
-               #redirect_to('../../auth/google_oauth2') 
-               return nil
+               1
           end
      end
-
 end

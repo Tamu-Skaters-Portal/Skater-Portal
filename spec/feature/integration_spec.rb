@@ -7,8 +7,7 @@ require 'rails_helper'
 #   })
 # end
 
-
-#TODO: Fix this test to mock google oauth in order to go to /members page
+# TODO: Fix this test to mock google oauth in order to go to /members page
 
 # RSpec.describe('Creating a member', type: :feature) do
 #      it 'valid inputs' do
@@ -24,7 +23,7 @@ require 'rails_helper'
 
 #           # clicking on the create member button
 #           click_on 'Create Member'
-          
+
 #           visit members_path # visiting the member table page
 
 #           # checking to see if the page has expected content
@@ -38,10 +37,10 @@ require 'rails_helper'
 
 # landing page test
 RSpec.describe('Rendering Landing Page', type: :feature) do
-  it 'valid inputs' do
-      visit root_path #going to landing page
-      expect(page).to(have_content('Maddie Wang'))
-  end
+     it 'valid inputs' do
+          visit root_path # going to landing page
+          expect(page).to(have_content('Maddie Wang'))
+     end
 end
 
 RSpec.describe('Creating an Event', type: :feature) do
@@ -56,6 +55,13 @@ RSpec.describe('Creating an Event', type: :feature) do
           expect(page).to(have_content('Nam house'))
      end
 end
+
+# RSpec.describe('Going to member table', type: :feature) do
+#      it 'valid inputs' do
+#           visit members_path
+#           expect(page).to(have_content('Maddie Wang'))
+#      end
+# end
 
 # RSpec.describe('Creating an Attendance', type: :feature) do
 #      it 'valid inputs' do
@@ -118,7 +124,7 @@ end
 #      end
 # end
 
-#older version of finances table test
+# older version of finances table test
 # RSpec.describe 'Creating a Finance', type: :feature do
 #      scenario 'valid inputs' do
 #      visit new_member_path
