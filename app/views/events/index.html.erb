@@ -50,7 +50,7 @@
     <% @events.each do |event| %>
       <tr>
         <%# For each of the members show their date and location and give the option to show edit or destroy %>
-        <th scope="row"><%= event.date %></td>
+        <th scope="row"><%= event.date.strftime("%Y-%m-%d %l:%m%P ") %></td>
         <td><%= event.location %></td>
         <td><%= link_to 'Get Points', event%></td>
         <% if @current_member && @current_member.access_type == 1 %>
