@@ -40,6 +40,7 @@
   <thead>
     <tr>
       <%# table column titles %>
+      <th scope="col">Name</th>
       <th scope="col">Date</th>
       <th scope="col">Location</th>
       <th colspan="3"></th>
@@ -49,6 +50,7 @@
   <tbody>
     <% @events.each do |event| %>
       <tr>
+        <td><%= event.name %></td>
         <%# For each of the members show their date and location and give the option to show edit or destroy %>
         <th scope="row"><%= event.date.strftime("%Y-%m-%d %l:%m%P ") %></td>
         <td><%= event.location %></td>
