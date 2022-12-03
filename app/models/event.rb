@@ -2,7 +2,7 @@ class Event < ApplicationRecord
      validates :name, presence: true
      validates :date, presence: true
      validates :location, presence: true
-     has_one :attendance
+     has_one :attendance, :dependent => :destroy
 
      def self.sign_in_page(current_member, current_event)
           # Compare date time, give a 60 minute period in which members can sign in
